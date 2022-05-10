@@ -1,5 +1,7 @@
- provider "google" {
-     project     = "gcp-terraform-348507"
+ variable "project"{
+ default= ""}
+provider "google" {
+     project     = var.name
      region      = "asia-east1"
      zone        = "asia-east1-c"
      credentials = file("gcp-accounts.json")
