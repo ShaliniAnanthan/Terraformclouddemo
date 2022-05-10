@@ -1,5 +1,3 @@
- variable "project"{
- default = ""}
 provider "google" {
      project     = var.name
      region      = "asia-east1"
