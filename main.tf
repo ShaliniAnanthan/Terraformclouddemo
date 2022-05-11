@@ -2,7 +2,6 @@ provider "google" {
      project     = var.project
      region      = "asia-east1"
      zone        = "asia-east1-c"
-     credentials = file(var.GOOGLE_CREDENTIALS)
 }
 
 resource "google_compute_instance" "default" {
